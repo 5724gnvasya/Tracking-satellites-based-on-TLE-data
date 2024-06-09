@@ -1,51 +1,51 @@
 const addButton = document.querySelector(".add");
 const submitButton  = document.querySelector(".submit");
 
-function createForm() {
-  const form = document.createElement("form");
-  form.className = "satellite-form";
-  const inputField1 = document.createElement("input");
-  inputField1.type = "number";
-  inputField1.placeholder = "Enter satellite's ID";
-  // inputField1.style.placeholder = "font-family: 'Lato', sans-serif; color: #ccc; font-weight: bold; text-decoration: none; text-transform: uppercase;";
-  // inputField1.setAttribute("placeholder", "Enter satellite's ID");
-  // inputField1.setAttribute("style", "placeholder: font-family: 'Lato', sans-serif; color: #ccc;");
+// на время убрали функцию добавления спунтика
 
-  form.appendChild(inputField1);
+// function createForm() {
+//   const form = document.createElement("form");
+//   form.className = "satellite-form";
+//   const inputField1 = document.createElement("input");
+//   inputField1.type = "number";
+//   inputField1.placeholder = "Enter satellite's ID";
+//   // inputField1.style.placeholder = "font-family: 'Lato', sans-serif; color: #ccc; font-weight: bold; text-decoration: none; text-transform: uppercase;";
+//   // inputField1.setAttribute("placeholder", "Enter satellite's ID");
+//   // inputField1.setAttribute("style", "placeholder: font-family: 'Lato', sans-serif; color: #ccc;");
 
-  const inputField2 = document.createElement("input");
-  inputField2.type = "number";
-  inputField2.placeholder = "Enter step";
-  // inputField2.style.placeholder = "font-family: 'Lato', sans-serif; color: #ccc; font-weight: bold; text-decoration: none; text-transform: uppercase;";
+//   form.appendChild(inputField1);
+
+//   const inputField2 = document.createElement("input");
+//   inputField2.type = "number";
+//   inputField2.placeholder = "Enter step";
+//   // inputField2.style.placeholder = "font-family: 'Lato', sans-serif; color: #ccc; font-weight: bold; text-decoration: none; text-transform: uppercase;";
   
-  form.appendChild(inputField2);
+//   form.appendChild(inputField2);
 
-  const inputField3 = document.createElement("input");
-  inputField3.type = "date";
-  inputField3.placeholder = "Enter date";
-  // inputField3.style.placeholder = "font-family: 'Lato', sans-serif; color: #ccc; font-weight: bold; text-decoration: none; text-transform: uppercase;";
+//   const inputField3 = document.createElement("input");
+//   inputField3.type = "date";
+//   inputField3.placeholder = "Enter date";
+//   // inputField3.style.placeholder = "font-family: 'Lato', sans-serif; color: #ccc; font-weight: bold; text-decoration: none; text-transform: uppercase;";
   
-  form.appendChild(inputField3);
+//   form.appendChild(inputField3);
 
-  const deleteButton = document.createElement("button");
-  deleteButton.type = "button";
-  deleteButton.textContent = "Delete satellite";
-  deleteButton.className = "delete";
-  form.appendChild(deleteButton);
+//   const deleteButton = document.createElement("button");
+//   deleteButton.type = "button";
+//   deleteButton.textContent = "Delete satellite";
+//   deleteButton.className = "delete";
+//   form.appendChild(deleteButton);
 
   
-  deleteButton.addEventListener("click", function() {
-    form.remove();
-  });
+//   deleteButton.addEventListener("click", function() {
+//     form.remove();
+//   });
 
-  document.querySelector('.satellites_info').appendChild(form);
+//   document.querySelector('.satellites_info').appendChild(form);
 
-}
+// }
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   createForm();
-// });
-addButton.addEventListener("click", createForm);
+
+// addButton.addEventListener("click", createForm);
 
 
 // document.addEventListener("DOMContentLoaded", function() {
@@ -64,26 +64,35 @@ addButton.addEventListener("click", createForm);
 const imageBlock = document.getElementById('image-block');
 
 
-submitButton.addEventListener('click', function() {
-  const imageBlock = document.getElementById('image-block');
-  const existingImage = imageBlock.querySelector('img');
+// submitButton.addEventListener('click', function() {
+//   const imageBlock = document.getElementById('image-block');
+//   const existingImage = imageBlock.querySelector('img');
 
-  if (!existingImage) {
-  //   // If an image already exists, do nothing or replace it with a new one
-  //   existingImage.src = '../static/icons/example1.jpg';
-  // } else {
-    const img = document.createElement('img');
-    img.src = '../static/icons/example1.jpg';
+//   if (!existingImage) {
+//   //   // If an image already exists, do nothing or replace it with a new one
+//   //   existingImage.src = '../static/icons/example1.jpg';
+//   // } else {
+//     const img = document.createElement('img');
+//     img.src = '../static/icons/example1.jpg';
 
-    img.onload = function() {
-      console.log('Image loaded!');
-      imageBlock.appendChild(img);
-    }
-  }
-}
-);
+//     img.onload = function() {
+//       console.log('Image loaded!');
+//       imageBlock.appendChild(img);
+//     }
+//   }
+// }
+// );
 
-
+// submitButton.addEventListener('click', function() {
+//   const formData = new FormData(document.querySelector('form'));
+//   fetch('/submit', {
+//       method: 'POST',
+//       body: formData
+//   })
+//  .then(response => response.json())
+//  .then(data => console.log(data))
+//  .catch(error => console.error(error));
+// });
 
 
 // отправка данных на бэк, пока не работает
