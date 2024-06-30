@@ -6,8 +6,7 @@ import datetime
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
-from flask import flash, redirect
-# from flask import flash # для отображения сообщений
+from flask import flash, redirect # was needed for showing error messages
 
 def add_id(new_id):
     df = pd.read_csv('curr.csv')
@@ -42,8 +41,8 @@ def fetch_tle_data():
 
 def make_other():
     print("Entering make_other() function")
-    global error_message
-    error_message = None
+    # global error_message
+    # error_message = None
     orbital = None
     fig, ax = plt.subplots(figsize=(10, 10), subplot_kw={'projection': ccrs.PlateCarree()})
     ax.add_feature(cfeature.LAND)
@@ -87,8 +86,6 @@ def make_other():
     ax.set_ylabel('Latitude')
     fig.tight_layout()
     plt.savefig('satellites.png', bbox_inches='tight')
-
-    
 
 
 def assign_colours():

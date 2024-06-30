@@ -10,10 +10,9 @@ def stop():
 
 def endless_loop():
     while True:
-        event.wait()  # Ждем события
+        event.wait() 
         if event.is_set():
             break
-        # Выполняйте код, который должен повторяться бесконечно
         fetch_tle_data()
         make_other()
         time.sleep(30)

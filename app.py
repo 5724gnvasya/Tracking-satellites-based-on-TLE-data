@@ -7,8 +7,7 @@ import datetime
 
 app = Flask(__name__)
 
-# app.secret_key = 'd75724d7loveS01FedG10OOprivet_menya_zovyt_aALLa_i_mne_hochetsya_et0_opyblickovat_'
-# Initialize CSV file
+
 initialize_csv()
 
 # Create a thread for the endless loop
@@ -45,7 +44,6 @@ def select_satellites():
         # else:
         #     return render_template('trajectory.html')
         return render_template("trajectory.html")
-        # return render_template("trajectory.html", error_message=error_message)
         #return render_template('trajectory.html', error_message=error_message)
     else:
         df = pd.read_csv("test_tle.csv")
