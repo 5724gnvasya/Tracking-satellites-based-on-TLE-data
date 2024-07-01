@@ -79,6 +79,12 @@ Note, that the final version is on the final_version branch.
 ### Running the Project
 
 To start tracking satellites, run `python main.py` command in the command line of the cloned project.
+A few seconds after you will see:
+```
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+```
+Just do it!
 
 **Here is what you will see**
 -------------
