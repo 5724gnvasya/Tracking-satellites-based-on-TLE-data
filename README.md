@@ -15,23 +15,15 @@ Tracking satellites is an essential task in various fields, and a program for tr
    To study the behavior of satellites, asteroids, and other celestial objects, gaining insights into the universe and its phenomena.
 * <b>Amateur satellite enthusiasts:</b>
   To observe and track satellites, learning about their orbits, purposes, and characteristics.
-* <b>Military and defense organizations:</b>
-  To monitor and track satellites used for surveillance, communication, and navigation, ensuring national security.
 * <b>Environmental monitoring and disaster response teams:</b>
   To track satellites used for Earth observation, such as those monitoring weather patterns, climate change, or natural disasters.
   
 <h3>Benefits of a satellite tracking program:</h3>
 
-* <b>Improved satellite operation and maintenance:</b>
-  By monitoring satellite health and position, operators can quickly respond to issues, reducing downtime and improving overall performance.
 * <b>Enhanced scientific research:</b>
    Accurate tracking data enables researchers to study satellite behavior, orbit dynamics, and the effects of space weather on satellite operations.
 * <b>Increased situational awareness:</b>
    Tracking satellites helps identify potential collisions, enabling evasive maneuvers to prevent damage or loss of satellites.
-* <b>Better communication and navigation:</b>
-   Accurate tracking data ensures that communication and navigation satellites remain in their designated orbits, providing reliable services to users.
-* <b>Environmental monitoring and disaster response:</b>
-  Satellite tracking enables timely monitoring of environmental changes, such as deforestation, ocean currents, or natural disasters, facilitating more effective response and mitigation efforts.
 * <b>Education and outreach:</b>
   Satellite tracking programs can engage the public in space exploration, inspiring interest in STEM fields and promoting a better understanding of space and its applications.
 * <b>Commercial applications:</b>
@@ -95,7 +87,7 @@ To start tracking satellites, run `python main.py` command in the command line o
 ![image](https://github.com/5724gnvasya/Tracking-satellites-based-on-TLE-data/assets/110739884/7f9ec2a0-d06e-4fc4-9349-5fe4e6caf524)
 
 
-<h4>Thanks to the user-friendly design, you can easily select the satellites you are interested in from the list, which is updated every 20 seconds according to the site database. you can also speed up the time to search for a satellite, because if you start entering its name in the field, the list will automatically leave only the names corresponding to your input.</h4>
+Thanks to the user-friendly design, you can easily select the satellites you are interested in from the list, which is updated every 20 seconds according to the site database. you can also speed up the time to search for a satellite, because if you start entering its name in the field, the list will automatically leave only the names corresponding to your input
 
 
 ![image](https://github.com/5724gnvasya/Tracking-satellites-based-on-TLE-data/assets/110739884/5c15f0f1-d700-4f6f-8f69-a253fa8979eb)
@@ -126,16 +118,6 @@ Here is an example how this message will be shown:
 ![image](https://github.com/5724gnvasya/Tracking-satellites-based-on-TLE-data/assets/110739884/0cae51a1-af6a-4430-84c6-a334810f009d)
 
 
-
-**Contributing**
-------------
-
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
-
-**License**
----------
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 **Author**
 ---------
